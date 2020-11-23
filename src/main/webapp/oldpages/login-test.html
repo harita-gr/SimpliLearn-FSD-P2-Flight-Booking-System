@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://kit.fontawesome.com/2a534a6860.js" crossorigin="anonymous"></script>
+<style>
+
+   body{ 
+      margin:0;
+      padding:0;
+      background-image: url('images/Online-Flight-Booking-Offers.jpg');
+	  background-size:cover;
+   }
+  .login-box{
+     width:280px;
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     color:white;
+     background-color:black;
+     opacity: 0.7;
+}
+   
+   .login-box h1{
+     float:left;
+     font-size:40px;
+     border-bottom:6px solid #3fe434;
+     margin-bottom:10px;
+     padding:13px 0px; 
+   }
+   
+   .inputBox{
+   width:100%;
+   overflow:hidden;
+   font-size:20px;
+   padding:8px 0;
+   border-bottom:2px solid #3fe434;
+   }
+   
+   .inputBox i{
+   width:24px;
+   float:left;
+   margin-top:18px;
+   text-align:center;
+   
+   }
+   
+   .inputBox input{
+   border:none;
+   outline:none;
+   background:none;
+   color:white;
+   margin-left:10px;
+   font-size:18px;
+   float:left;
+   margin-top:20px;   
+   }
+
+   ::-webkit-input-placeholder{
+   color:white; 
+   }
+   
+   .btn{
+   width:100%;
+   height:40px;
+   background:none;
+   color:white;
+   font-size:18px;
+   margin-top:30px;
+   border-color: #3fe434;
+   outline:none;
+   }
+
+</style>
+</head>
+
+<body>  
+        
+       <div class="login-box">
+          <h1> Login </h1>
+          <form method="post" action="ValidationControllerServlet">
+              <input type="hidden" name="command" value="LOGIN">     
+		         <div class="inputBox">
+		               <i class="fas fa-envelope"></i>
+		               <label>Email ID</label>
+		               <input type="email" name="email">
+		         </div>
+		         <div class="inputBox">
+		               <i class="fas fa-lock"></i>
+		               <label>Password</label>
+		               <input type="password" name="password">
+		         </div>
+		         <input type="submit" value="Login" />
+        New User? <a href="register.jsp">Register Here</a>
+       </form>
+       </div>
+     
+</body>
+</html>

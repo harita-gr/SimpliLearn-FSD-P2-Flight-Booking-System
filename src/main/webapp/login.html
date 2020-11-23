@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="https://kit.fontawesome.com/2a534a6860.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<title>Insert title here</title>
+</head>
+<body>
+       <h1 id="title-head">Flyaway Flight Booking</h1>
+       <h2><b>  <span id="loginalert" ></span> </b></h2>
+       <div class="login-box">
+          <h1> Login </h1>
+          <form method="post" action="ValidationControllerServlet">
+              <input type="hidden" name="command" value="LOGIN">     
+              <span id="error" ></span>  
+		         <div class="inputBox">
+		               <i class="fas fa-envelope"></i>
+		               <label>Email ID</label>
+		               <input class="input-field" type="email" name="email" placeholder="Enter your email" required autofocus>
+		         </div><br>
+		         <div class="inputBox">
+		               <i class="fas fa-lock"></i>
+		               <label>Password</label>
+		               <input class="input-field" type="password" name="password" placeholder="Enter your password" required>
+		         </div><br>
+		         <input type="submit" value="SIGN IN" class="login-btn" />
+		    </form>
+		         <hr>
+		         <p class="or">OR</p>
+                 New User? <a href="signup.html">Register Here</a> 
+                 <hr>
+		         <p class="or">OR</p>
+                 <small> Sign in as <a href="admin_login.html"> Admin </a></small>                                                
+       
+       </div>
+</body>
+</html>
