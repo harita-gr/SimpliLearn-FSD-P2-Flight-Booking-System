@@ -74,6 +74,12 @@ Through Eclipse IDE
      
      Run As -> Run on Server -> Start Tomcat server             // To start from HOME page without login   
      
+     Sample User/Admin Data for login:
+     
+| Email          |Password      |
+| ------------- | ------------- |
+| h@t.com  | 1234  |
+| admin  | admin |
      
 ## Author
 Harita Ravindranath
