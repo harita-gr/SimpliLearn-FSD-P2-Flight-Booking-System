@@ -62,7 +62,12 @@ Through Eclipse IDE
     ````
     git clone https://github.com/haritaToboso/SimpliLearn-FSD-P2-Flight-Booking-System.git
     ````
-2. Configure Database using the SQL files attached. This is used to create DB along with required table containg user & flight data.    
+2. Configure Database using the SQL files attached. This is used to create DB along with required table containing user & flight data.  Run the scripts in MySql.
+  
+    Find files at:   
+    
+    **src/main/resources/**
+    
 3. Open the folder containg code as Java Project via Eclipse
 4. Go to src/main/webapp/index.html and select: 
 
