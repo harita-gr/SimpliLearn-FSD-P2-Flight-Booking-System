@@ -89,4 +89,3 @@ Through Eclipse IDE
 ## Author
 Harita Ravindranath
 
-*Company Lockers Private Ltd.*
