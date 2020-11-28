@@ -18,7 +18,8 @@ b) Admin Backend which enables admin to:
 
 Flow Chart is given below for application workflow reference:
 
-
+ADMIN BACKEND
+![Untitled Document (2)](https://user-images.githubusercontent.com/61909695/100521798-ee3c8d80-31cb-11eb-8db4-1ecf22ab8252.png)
 
 ## Tools & Technnology
 - Backend Programming Language: Core Java.
