@@ -66,6 +66,7 @@ Through Eclipse IDE
                       OR 
                       
      Go to src/main/webapp/home.jsp and select: 
+     
      Run As -> Run on Server -> Start Tomcat server             // To start from HOME page without login   
      
      
