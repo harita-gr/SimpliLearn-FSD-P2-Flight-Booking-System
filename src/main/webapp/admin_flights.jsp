@@ -33,8 +33,7 @@
         <li><a href="${airlineLink}"><b>AIRLINES</b></a> </li>
         <li><a href="${flightLink}"><b>FLIGHT LIST </b></a></li>
    </ul> 
- 
- 
+  
     <div>
     <table border="1" style="margin: auto;">
         <thead>
@@ -71,11 +70,10 @@
       </tr>
      </c:forEach>
      </tbody>   
-    </div> 
+     </table>   
+     </div> 
    
-</div>
-</div>
+ </div>
+ </div>
 
-</body>
- 
-</html>
+<%@include file="footer.html" %>
