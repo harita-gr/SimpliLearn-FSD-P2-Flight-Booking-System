@@ -3,7 +3,7 @@
   <Resource name="jdbc/flight_booking" 
   			auth="Container" type="javax.sql.DataSource"
                maxActive="20" maxIdle="5" maxWait="10000"
-               username="root" password="shinSEKAI95!" 
+               username="flyaway" password="flyaway" 
                driverClassName="com.mysql.cj.jdbc.Driver"
                url="jdbc:mysql://localhost:3306/flight_booking"/>
 </Context>
