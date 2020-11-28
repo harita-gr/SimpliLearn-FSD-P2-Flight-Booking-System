@@ -37,65 +37,55 @@ public class AdminDBUtil {
   	 e.printStackTrace();
      }		
 	}
-
-	@SuppressWarnings("resource")
-	public boolean changePassword(String oldpassword, String newpassword, String username) throws Exception {
-		//JDBC Objects
-		Connection myConn = null;
-		PreparedStatement myStmt = null;
-		ResultSet myRs = null;
-		String pass=null;
-		
-		try {
-			//get a connection
-			
-				myConn = dataSource.getConnection();
-				
-		    //create a sql statement
-				
-				String sql="SELECT a_password from admin WHERE a_username=?";
-				myStmt = myConn.prepareStatement(sql);
-				
-			//set the param values for the student
-				
-				myStmt.setString(1,username);
-			
-			//execute sql  insert
-				
-				myRs=myStmt.executeQuery();
-				if(!myRs.next())
-				{
-					return false;
-				}	
-				
-			    pass=myRs.getString("a_password");
-					
-				if(!pass.equals(oldpassword)) {		
-				   return false;
-	           }
-				else {
-					executeSQLUnsafeMode();
-					sql="UPDATE admin SET a_password =? WHERE a_username=?";
-					myStmt = myConn.prepareStatement(sql);
-					myStmt.setString(1,newpassword);
-					myStmt.setString(2,username);
-					myStmt.executeQuery();
-					return true;
-				}
-				
-				}
-				
-		 finally {
-			//clean up JDBC objects
-			     executeSQLSafeMode();
-				close(myConn,myStmt,null);
-				}
-		  }
-
+	  
+//********************************************************************************************
+//	public boolean changePassword(String oldpassword, String newpassword, String username) throws Exception {
+//		//JDBC Objects
+//		Connection myConn = null;
+//		PreparedStatement myStmt = null;
+//		ResultSet myRs = null;
+//		String pass=null;
+//		
+//		try {		
+//				myConn = dataSource.getConnection();
+//		
+//				String sql="SELECT a_password from admin WHERE a_username=?";
+//				myStmt = myConn.prepareStatement(sql);				
+//				myStmt.setString(1,username);				
+//				myRs=myStmt.executeQuery();
+//				if(!myRs.next())
+//				{
+//					return false;
+//				}	
+//				
+//			    pass=myRs.getString("a_password");
+//					
+//				if(!pass.equals(oldpassword)) {		
+//				   return false;
+//	           }
+//				else {
+//					executeSQLUnsafeMode();
+//					sql="UPDATE admin SET a_password =? WHERE a_username=?";
+//					myStmt = myConn.prepareStatement(sql);
+//					myStmt.setString(1,newpassword);
+//					myStmt.setString(2,username);
+//					myStmt.execute(sql);
+//					return true;
+//				}
+//				
+//				}
+//				
+//		 finally {
+//			//clean up JDBC objects
+//			     executeSQLSafeMode();
+//				close(myConn,myStmt,myRs);
+//				}
+//		  }
+//********************************************************************************************
 	private void executeSQLSafeMode() throws SQLException {
 		Connection myConn = null;
 		Statement myStmt = null;
-		ResultSet myRs = null;
+		System.out.println("Executing in SQL Safe Mode...");
 				
 		try {
 				myConn = dataSource.getConnection();
@@ -111,7 +101,7 @@ public class AdminDBUtil {
 	private void executeSQLUnsafeMode() throws SQLException {
 		Connection myConn = null;
 		Statement myStmt = null;
-		ResultSet myRs = null;
+		System.out.println("Executing in SQL UnSafe Mode");
 				
 		try {
 				myConn = dataSource.getConnection();
@@ -287,8 +277,47 @@ public class AdminDBUtil {
 			System.out.println("SQL DONE 02");
 			}		
 	}
-	    
-}
+
+	public boolean changePassword(String oldpassword, String newpassword, String username) throws Exception,SQLException {
 	
-	  
+	    Connection myConn = null;
+		PreparedStatement myStmt = null;
+		String sql=null;
+		UserDbUtil udb = new UserDbUtil(dataSource);
+		AdminUser a= new AdminUser(username,oldpassword);
+     try {
+    	 
+		String db_password = udb.validateAdminLogin(a);
+		
+		
+		if(!db_password.equals(oldpassword)) {
+			return false;
+		}
+		
+		else {
+			
+			executeSQLUnsafeMode();
+			myConn = dataSource.getConnection();
+			
+		    sql = "UPDATE admin SET a_password=?";
+			
+			myStmt = myConn.prepareStatement(sql);
+			myStmt.setString(1,newpassword);
+//			myStmt.setString(2,username);
+			int status =myStmt.executeUpdate();	
+			System.out.println("Update Status: "+status);
+			return true;
+		}
+	  }
+	
+	finally {
+		System.out.println("AT PASSWORD UPDATION");		
+		executeSQLSafeMode();
+		close(myConn,myStmt,null);
+		
+		}		
+	
+    }
+	
+} 
 

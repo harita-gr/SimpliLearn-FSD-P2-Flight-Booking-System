@@ -17,6 +17,8 @@
  <form action="AdminControllerServlet" method="get">
  <input type="hidden" name="command" value="CHANGE"> 
    <div class="inputfield">
+       <span id="success" style="color:green;text-align:center;font-size:15px;"></span>
+       <span id="error" style="color:red;text-align:center;font-size:15px;padding-bottom:5px;"></span> <br>
        <label> Enter Username</label> <br>
        <input type="text" name="username">
    </div><br>
@@ -31,6 +33,6 @@
    <input type="submit" value="CHANGE PASSWORD" id="change-pwd-btn" onclick="if(!(confirm('Are you sure you want to change password?')))return false;"  style="margin-left:0px;padding: 7px 12px;font-size: 14px;background-color: #00cc00;cursor:pointer;border-radius:12px"> 
  </form>
  </div> <br>
-  <span class="error success" ></span>
+
   
  <%@include file="footer.html" %> 

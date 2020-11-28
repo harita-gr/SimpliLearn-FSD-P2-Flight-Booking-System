@@ -129,7 +129,7 @@ public class UserDbUtil {
 				String sql="SELECT a_password from admin WHERE a_username=?";
 				myStmt = myConn.prepareStatement(sql);
 				
-			//set the param values for the student
+			//set the param values for the user
 				
 				myStmt.setString(1,admin.getUsername());
 			

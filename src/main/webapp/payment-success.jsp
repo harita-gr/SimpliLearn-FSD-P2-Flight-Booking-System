@@ -5,10 +5,10 @@
 <div id="navbar">
   <ul>
      <li><a href="home.jsp">Hi User </a> </li>
-     <li><a href="#">MY PROFILE</a> </li>
+     <li><a href="my-profile.jsp">MY PROFILE</a> </li>
      <li><a href="LogoutServlet" onclick="if(!(confirm('Are you sure you want to logout?')))return false">LOGOUT </a></li>
   </ul>
- </div> 
+</div>
 <div id="msg-container" style="border:2px solid black;background-color:white;opacity:0.8;margin: auto;width:60%;padding:15px;">
    <div style="margin-left:150px;">
    <img src="images/thank-you.png">

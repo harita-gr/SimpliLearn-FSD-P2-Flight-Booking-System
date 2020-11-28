@@ -6,10 +6,10 @@
 <div id="navbar">
   <ul>
      <li><a href="home.jsp">Hi User </a> </li>
-     <li><a href="#" class="active">MY PROFILE</a> </li>
+     <li><a href="my-profile.jsp">MY PROFILE</a> </li>
      <li><a href="LogoutServlet" onclick="if(!(confirm('Are you sure you want to logout?')))return false">LOGOUT </a></li>
   </ul>
- </div> 
+</div>
             <c:url var="detailsLink" value="ActivityControllerServlet">
              <c:param name="command" value="DETAILS"/>                            
             </c:url>

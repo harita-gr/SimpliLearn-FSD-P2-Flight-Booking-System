@@ -133,14 +133,16 @@ public class AdminControllerServlet extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		
 		if(success) {
-			rd= request.getRequestDispatcher("admin-pofile.html");
+			System.out.println("Successfully Changed Password");
+			rd= request.getRequestDispatcher("admin-profile.jsp");
 			rd.include(request, response);
-			out.println("<script>document.getElementsByClassName('error').innerHTML='Password Changed Successfully!'; </script>");
+			out.println("<script>document.getElementById('success').innerHTML='Password Changed Successfully!'; </script>");
 	}
 		else {
-			rd= request.getRequestDispatcher("admin-profile.html");
+			System.out.println("Incorrect Password");
+			rd= request.getRequestDispatcher("admin-profile.jsp");
 			rd.include(request, response);
-			out.println("<script>document.getElementsByClassName('success').innerHTML='Incorrect Password!'; </script>");			
+			out.println("<script>document.getElementById('error').innerHTML='Incorrect Password!'; </script>");			
 		}
 
 	}

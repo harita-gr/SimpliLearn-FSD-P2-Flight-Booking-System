@@ -7,10 +7,10 @@
 <div id="navbar">
   <ul>
      <li><a href="home.jsp">Hi User </a> </li>
-     <li><a href="#" class="active">MY PROFILE</a> </li>
+     <li><a href="my-profile.jsp">MY PROFILE</a> </li>
      <li><a href="LogoutServlet" onclick="if(!(confirm('Are you sure you want to logout?')))return false">LOGOUT </a></li>
   </ul>
- </div> 
+</div>
          
  <div id="option-container" style="border:2px solid black;background-color:white;opacity:0.9;margin: auto;width:50%;padding:15px;">
  <h2>MY ORDERS</h2><br>

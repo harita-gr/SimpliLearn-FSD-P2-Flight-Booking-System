@@ -147,15 +147,15 @@ public class ValidationControllerServlet extends HttpServlet {
 			session.setAttribute("username",profileDetails.getFname());
 			session.setAttribute("user_email", email);
 			rd= request.getRequestDispatcher("home.jsp");
-			out.println("<script>document.getElementsById('error').innerHTML=''; </script>");
+			out.println("<script>document.getElementById('error').innerHTML=''; </script>");
 			rd.forward(request, response);
 		}
 		    //If failure, print error message in login page = INCLUDE
 		else {
 
-			rd=request.getRequestDispatcher("login.jsp");			
+			rd=request.getRequestDispatcher("login.html");			
 			rd.include(request, response); // HTML page output + output of else condition will be printed
-			out.println("<script>document.getElementsById('error').innerHTML='Invalid UserName or Password!'; </script>");
+			out.println("<script>document.getElementById('error').innerHTML='Invalid UserName or Password!'; </script>");
 		}		
 	}
 

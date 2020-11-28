@@ -205,9 +205,10 @@ public class BookingControllerServlet extends HttpServlet {
 	    }
 	    else {
 	    	System.out.println("User not logged in!");
+	    	
 	    	rd=request.getRequestDispatcher("login.html");			
 			rd.include(request, response); // HTML page output + output of else condition will be printed
-			out.println("<script>document.getElementsById('loginalert').innerHTML='Please Login to Continue'; </script>");
+			out.println("<script>document.getElementById('loginalert').innerHTML='Please Login to Continue'; </script>");
 	    }
 	}
 

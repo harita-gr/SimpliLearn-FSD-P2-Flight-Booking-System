@@ -19,62 +19,63 @@
              <!-- Put new button: Clear Results -->
       <input type="button" value="Reset" onclick="window.location.href='add-flight.jsp';return false;"class="reset-search-button" style="float:right">
             <div class="inputBox">
-		               <label>Flight ID:</label>
+		               <label>Flight ID:</label><br>
 		               <input class="input-field" type="text" name="flightID" placeholder="XX-XXX" id="flightID">
 		         </div><br>
-		          <div class="inputBox">
-		               
-		               <label>Airline:</label>
+		         
+		          <div class="inputBox">		               
+		               <label>Airline:</label><br>
 		               <input class="input-field" type="text" name="airline" placeholder="Enter airline" id="airline">
 		         </div><br>   
+		         
 		         <div class="inputBox">
 		               
-		               <label>Source:</label>
+		               <label>Source:</label><br>
 		               <input class="input-field" type="text" name="src" placeholder="Enter source location" id="src">
 		         </div><br>
 		          <div class="inputBox">
 		               
-		               <label>Destination:</label>
+		               <label>Destination:</label><br>
 		               <input class="input-field" type="text" name="dest" placeholder="Enter destination location" id="dest">
 		         </div><br>
 		         <div class="inputBox">
 		               
-		               <label>Airport:</label>
+		               <label>Airport:</label><br>
 		               <input class="input-field" type="text" name="ap" placeholder="Enter airport" id="ap">
 		         </div><br>
 		     
 		         <div class="inputBox">
 		               
-		               <label>Total Seats:</label>
+		               <label>Total Seats:</label><br>
 		               <input class="input-field" type="text" name="seats" placeholder="Enter seats available" id="seats">
 		         </div><br>
 		         <div class="inputBox">
 		               
-		               <label>Fare:</label>
+		               <label>Fare:</label><br>
 		               <input class="input-field" type="text" name="fare" placeholder="Enter ticket price" id="fare">
 		         </div><br>
 		         
 		         <div class="inputBox">
-		              <label>Duration:</label>
+		              <label>Duration:</label><br>
 		               <input class="input-field" type="text" name="dur" placeholder="0h 0min" id="dur">
 		         </div><br>
 		                 <div class="inputBox">
-		               <label>Duration in Minutes:</label>
+		               <label>Duration in Minutes:</label><br>
 		               <input class="input-field" type="text" name="dur_min" placeholder="000" id="dur_min">
 		         </div><br>
 		         <div class="inputBox">
 		               
-		               <label>Departure Time:</label>
+		               <label>Departure Time:</label><br>
 		               <input class="input-field" type="text" name="dep" placeholder="00:00:00" id="dep">
 		         </div><br>
 		         <div class="inputBox">
 		               
-		               <label>Arrival Time:</label>
+		               <label>Arrival Time:</label><br>
 		               <input class="input-field" type="text" name="arr" placeholder="00:00:00" id="arr">
 		         </div><br>
 		         <div class="inputBox">
 		               
-		               <label>Total Stops:</label>
+		               <label>Total Stops:</label><br>
 		               <input class="input-field" type="text" name="stops" placeholder="Enter total Stops" id="stops">
 		         </div><br>
 		 		          		         	              		             
