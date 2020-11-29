@@ -53,13 +53,13 @@ width:70%;
       <div id="icons"> <img src="https://img.icons8.com/color/36/000000/visa.png"> <img src="https://img.icons8.com/color/36/000000/mastercard.png"> <img src="https://img.icons8.com/color/36/000000/amex.png"> </div><br> <br>
       <br>
       <label>CARD NUMBER</label>
-      <input type="text" placeholder="Valid 16 digit Card Number"><br>
+      <input type="text" placeholder="Valid 16 digit Card Number" required><br>
       
       <label>EXPIRATION DATE</label>
-      <input type="text"  placeholder="MM/YY"><br>
+      <input type="text"  placeholder="MM/YY" required><br>
       
       <label>CVV CODE</label>
-      <input type="text" placeholder="CVC"><br>
+      <input type="text" placeholder="CVC" required><br>
       
       <label>COUPON CODE</label>
       <input type="text" placeholder=""><br>

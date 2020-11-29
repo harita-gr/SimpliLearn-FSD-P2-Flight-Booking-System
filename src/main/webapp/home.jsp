@@ -20,11 +20,11 @@
 <!--   <input type="radio" name="flight-class" value="Business"> Business
      <input type="radio"  name="flight-class" value="Economy"> Economy <br><br> -->   
      <label>Source</label>
-     <input type="text" name="source" id="source" placeholder="New Delhi">
+     <input type="text" name="source" id="source" placeholder="New Delhi" required>
      <label>Destination</label>
-     <input type="text" name="destination" id="destination" placeholder="Bangalore">
+     <input type="text" name="destination" id="destination" placeholder="Bangalore" required>
      <label>Date</label>
-     <input type="date" name="date" id="date">
+     <input type="date" name="date" id="date" required>
      <label>Number of Passengers</label>
      <select name="no-of-people">
          <option value="1">Select</option>
