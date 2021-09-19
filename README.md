@@ -1,6 +1,9 @@
 # FLYAWAY AIRLINE TICKET BOOKING PORTAL :airplane:
 This is a flight ticket booking  application developed for **Flyaway Airline Booking**
 
+<img width="960" alt="cover-image" src="https://user-images.githubusercontent.com/61909695/133920839-e021f73c-6aa2-4406-a4a3-1bd46dc8e24f.png" width={500px} height={400px}>
+
+
 ---
 
 ## About the application
