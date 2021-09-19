@@ -1,5 +1,7 @@
-# FLYAWAY AIRLINE TICKET BOOKING PORTAL
+# FLYAWAY AIRLINE TICKET BOOKING PORTAL :airplane:
 This is a flight ticket booking  application developed for **Flyaway Airline Booking**
+
+---
 
 ## About the application
 The application is designed to assist the user by providing service to book flight tickets.They requirements of the application are:
@@ -24,7 +26,7 @@ USER FRONT END:
 ADMIN BACKEND:
 
 ![Untitled Document (2)](https://user-images.githubusercontent.com/61909695/100521798-ee3c8d80-31cb-11eb-8db4-1ecf22ab8252.png)
-
+---
 ## Tools & Technnology
 - Backend Programming Language: Core Java.
    The software backend is completely developed in Java EE. Key concepts and Technologies  implemented are:
@@ -43,8 +45,10 @@ ADMIN BACKEND:
  - IDE: Eclipse
  - Build Tool: Maven (Webapp Archetype)
  - Version Control: Git and GitHub
- - Project Management and Sprint Planning: JIRA
+ - Project Management and Sprint Planning: JIRA 
  
+--- 
+
  ## SetUp and Installation
  **Prerequisites**
  
@@ -53,8 +57,8 @@ ADMIN BACKEND:
  - Eclipse IDE (EE)
  - Git
  - MySQL workbench
- - Tomcat Server
-
+ - Tomcat Server 
+---
 **How to Run**
 
 Through Eclipse IDE
@@ -85,7 +89,12 @@ Through Eclipse IDE
 | ------------- | ------------- |
 | h@t.com  | 1234  |
 | admin  | admin |
-     
+
+---
+
 ## Author
 Harita Ravindranath
 
+---
+
+##### :pushpin:This project was build as part of Java Full Stack Development course by Simplilearn
